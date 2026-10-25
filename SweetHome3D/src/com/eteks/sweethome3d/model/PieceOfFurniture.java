@@ -56,7 +56,6 @@ public interface PieceOfFurniture {
    * Returns the width of this piece of furniture.
    */
   public abstract float getWidth();
-
   /**
    * Returns the elevation of this piece of furniture.
    */
