@@ -1,0 +1,29 @@
+[33mac76681[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Added level column to furniture table print(basic)
+[33m3e4437a[m Added PNG file of Task 3 to submissions directory
+[33m14ef688[m Implemented volume in the display column and sortby in the furniture menu
+[33m821c9fd[m Implemented the volume column in the table in SweetHome
+[33m3da7899[m Added PNG file of Task 1 to the submissions directory
+[33md34c8da[m Added PNG file of Task 2 to submissions directory.
+[33mcb942f4[m Made furniture descriptions editable
+[33mb175c30[m Merge pull request #3 from CSC207-2026F-UofT/maven-macos-fix
+[33mdd77ae4[m[33m ([m[1;31morigin/maven-macos-fix[m[33m)[m updated Troubleshooting for macOS `com.apple.eawt` maven issue; pom.xml fix implemented
+[33m859657a[m adding blurb about increasing scope
+[33mce6c756[m polishing the instructions
+[33me1ba71a[m Merge pull request #10 from jcal13/fixes
+[33md57383a[m require files in submission
+[33m52cc301[m improve instructions
+[33m2934702[m update instructions regarding java 8
+[33m71972a7[m update CI
+[33m98bcce5[m Add support for java 8 + improve instructions
+[33m827218e[m Merge pull request #9 from jcal13/addSolutionTest
+[33m8ffbb67[m Merge pull request #8 from jcal13/updateReadme
+[33mc003f33[m Add solution test
+[33m4b5a218[m ask users to clone the repo
+[33mb209a34[m Merge pull request #5 from jcal13/improvements
+[33m5290a68[m fix issue with pdf library
+[33m923ff3d[m refactor repo, add readme and quickstart, maven
+[33m1212caa[m Remove obsolete legacy files
+[33m2dc27e7[m adding screenshots and updating sketch of the tasks
+[33m02301aa[m adding rough sketch of the assignment tasks
+[33m4c94781[m Removed javax.jnlp dependencies
+[33m179a9a9[m ver 5.4
