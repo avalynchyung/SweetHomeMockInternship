@@ -782,18 +782,30 @@ public class FurnitureTable extends JTable implements View, Printable {
     // The print table with level
     // Add the level column from existing table column
     Object levelProperty = HomePieceOfFurniture.SortableProperty.LEVEL;
-    // Access table columns and find level column
-    TableColumn levelColumn = ((FurnitureTableColumnModel) columnModel).availableColumns.get(levelProperty);
-    TableColumn printableLevelColumn = new TableColumn();
-    printableLevelColumn.setIdentifier(levelColumn.getIdentifier());
-    printableLevelColumn.setHeaderValue(levelColumn.getHeaderValue());
+    // Check if level column is added in the table
+    // Case where table column does have level column
+    boolean hasLevelColumn = false;
+    for (int i = 0; i < printableColumnModel.getColumnCount(); i++) {
+      if (levelProperty == printableColumnModel.getColumn(i).getIdentifier()) {
+        hasLevelColumn = true;
+        break;
+      }
+    }
+    // Case that the table column does not have level column
+    if (!hasLevelColumn) {
+      // Access table columns and find level column
+      TableColumn levelColumn = ((FurnitureTableColumnModel) columnModel).availableColumns.get(levelProperty);
 
-    // Change printable column cell renderer
-    printableLevelColumn.setCellRenderer(levelColumn.getCellRenderer());
-    // Change printable column header renderer
-    printableLevelColumn.setHeaderRenderer(printableHeaderRenderer);
-    printableColumnModel.addColumn(printableLevelColumn);
+      TableColumn printableLevelColumn = new TableColumn();
+      printableLevelColumn.setIdentifier(levelColumn.getIdentifier());
+      printableLevelColumn.setHeaderValue(levelColumn.getHeaderValue());
 
+      // Change printable level column cell renderer
+      printableLevelColumn.setCellRenderer(levelColumn.getCellRenderer());
+      // Change printable column header renderer
+      printableLevelColumn.setHeaderRenderer(printableHeaderRenderer);
+      printableColumnModel.addColumn(printableLevelColumn);
+    }
     return print(g, pageFormat, pageIndex, printableColumnModel, Color.BLACK);
   }
 
